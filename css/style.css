@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 1fr 100px;
+  font-family: 'Roboto', sans-serif;
+}
+main {
+  min-height: 525px;
+  max-height: auto;
+  grid-column: 2;
+  grid-row: 1;
+}
+main > h1 {
+  text-align: center;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+form > textarea {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  width: 98.5%;
+  grid-column: 1/-1;
+}
+form > button {
+  display: inline;
+  height: 30px;
+  width: 70px;
+  margin: 3px 0;
+  color: white;
+  background: #1348f7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#botao__enviar {
+  grid-column: 1;
+}
+#botao__deletar {
+  grid-column: 2;
+  margin-left: 72%;
+}
+.ativo { 
+  display: block;
+  background: #2076f7;
+  width: 100%;
+  min-height: 50px;
+  max-height: 200px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.ativo > p {
+  grid-column: 1;
+  display: inline-block;
+  margin-left: 10px;
+}
+.ativo > input {
+  grid-column: 2;
+  display: inline-block;
+  align-self: center;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  grid-column: 2;
+  grid-row: 2;
+  align-content: center;
+  display: block;
+}
+footer  p {
+  margin-top: 10%;
+}
